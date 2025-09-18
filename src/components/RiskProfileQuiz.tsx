@@ -167,11 +167,11 @@ export const RiskProfileQuiz = () => {
   const progress = ((currentQuestion + 1) / questions.length) * 100;
 
   return (
-    <Card className="premium-card p-8 animate-slide-up border-2 border-primary/10">
+    <Card className="premium-card p-8 animate-slide-up">
       <div className="mb-8">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-xl font-bold text-foreground">Risk Profiling Assessment</h3>
-          <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
+          <span className="text-sm font-medium text-muted-foreground bg-muted/30 px-3 py-1 rounded-full">
             {currentQuestion + 1} of {questions.length}
           </span>
         </div>
