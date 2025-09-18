@@ -172,8 +172,7 @@
 /* Premium Component Styles */
 @layer components {
   .premium-card {
-    @apply bg-white rounded-xl shadow-[var(--shadow-card)] border border-border/50;
-    background: var(--gradient-card);
+    @apply bg-card rounded-xl shadow-[var(--shadow-card)] border border-border/50;
     transition: var(--transition-smooth);
   }
   
