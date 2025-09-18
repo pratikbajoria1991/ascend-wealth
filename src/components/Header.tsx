@@ -14,7 +14,7 @@ export const Header = () => {
           </div>
           <div>
             <h1 className="font-bold text-xl">WealthAI</h1>
-            <Badge variant="secondary" className="text-xs">SEBI Registered</Badge>
+            <Badge variant="secondary" className="text-xs">NISM Registered</Badge>
           </div>
         </div>
 

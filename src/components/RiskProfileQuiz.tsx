@@ -145,7 +145,7 @@ export const RiskProfileQuiz = () => {
         </div>
 
         <div className="text-xs text-muted-foreground border-t pt-4">
-          Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing. This platform provides educational content and category-level guidance only. For personalised investment advice, please consult a SEBI-registered Investment Adviser.
+          Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing. This platform provides educational content and category-level guidance only. For personalised investment advice, please consult a NISM-registered Investment Adviser.
         </div>
 
         <Button 
@@ -167,27 +167,27 @@ export const RiskProfileQuiz = () => {
   const progress = ((currentQuestion + 1) / questions.length) * 100;
 
   return (
-    <Card className="premium-card p-8 animate-slide-up">
+    <Card className="premium-card p-8 animate-slide-up border-2 border-primary/10">
       <div className="mb-8">
         <div className="flex items-center justify-between mb-4">
-          <h3 className="text-xl font-bold">Risk Profiling Assessment</h3>
-          <span className="text-sm text-muted-foreground">
+          <h3 className="text-xl font-bold text-foreground">Risk Profiling Assessment</h3>
+          <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
             {currentQuestion + 1} of {questions.length}
           </span>
         </div>
-        <Progress value={progress} className="h-2" />
+        <Progress value={progress} className="h-3" />
       </div>
 
       <div className="text-center mb-8">
-        <div className="w-16 h-16 mx-auto gradient-primary rounded-full flex items-center justify-center mb-4 text-white">
+        <div className="w-16 h-16 mx-auto gradient-primary rounded-full flex items-center justify-center mb-4 text-white shadow-glow">
           {question.icon}
         </div>
-        <h4 className="text-lg font-semibold mb-2">{question.title}</h4>
+        <h4 className="text-lg font-semibold mb-2 text-foreground">{question.title}</h4>
         <p className="text-muted-foreground">{question.description}</p>
       </div>
 
       <div className="space-y-6">
-        <div className="px-4">
+        <div className="px-4 py-2 bg-muted/30 rounded-lg">
           <Slider
             value={[answers[currentQuestion]]}
             onValueChange={handleSliderChange}
@@ -197,9 +197,9 @@ export const RiskProfileQuiz = () => {
           />
         </div>
 
-        <div className="flex justify-between text-sm text-muted-foreground px-2">
-          <span>{question.lowLabel}</span>
-          <span>{question.highLabel}</span>
+        <div className="flex justify-between text-sm font-medium text-muted-foreground px-2">
+          <span className="bg-muted/50 px-3 py-1 rounded-full">{question.lowLabel}</span>
+          <span className="bg-muted/50 px-3 py-1 rounded-full">{question.highLabel}</span>
         </div>
 
         <div className="flex gap-3 pt-6">

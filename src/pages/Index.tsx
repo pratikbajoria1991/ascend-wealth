@@ -72,7 +72,7 @@ const Index = () => {
             <div className="flex flex-wrap justify-center gap-6 text-sm text-white/80">
               <div className="flex items-center gap-2">
                 <Shield className="h-4 w-4" />
-                SEBI Registered
+                NISM Registered
               </div>
               <div className="flex items-center gap-2">
                 <Users className="h-4 w-4" />
@@ -178,7 +178,7 @@ const Index = () => {
               <div className="w-16 h-16 mx-auto gradient-success rounded-2xl flex items-center justify-center mb-6 group-hover:animate-pulse-glow">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">SEBI Compliant</h3>
+              <h3 className="text-xl font-semibold mb-4">NISM Compliant</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Fully regulated platform with proper segregation of research and 
                 distribution functions, ensuring transparency and compliance.

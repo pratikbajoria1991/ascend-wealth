@@ -39,7 +39,7 @@ export const AIChat = () => {
     setTimeout(() => {
       const aiResponse: Message = {
         id: (Date.now() + 1).toString(),
-        content: "Thank you for your question! As a moderate investor, you might consider diversified mutual funds or balanced hybrid funds. However, let me provide category-level guidance only. \n\nMutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing. This platform provides educational content and category-level guidance only. For personalised investment advice, please consult a SEBI-registered Investment Adviser.",
+        content: "Thank you for your question! As a moderate investor, you might consider diversified mutual funds or balanced hybrid funds. However, let me provide category-level guidance only. \n\nMutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing. This platform provides educational content and category-level guidance only. For personalised investment advice, please consult a NISM-registered Investment Adviser.",
         isUser: false,
         timestamp: new Date(),
       };

@@ -10,7 +10,7 @@ export const ComplianceFooter = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card className="premium-card p-4 text-center">
           <Shield className="h-8 w-8 text-primary mx-auto mb-3" />
-          <h4 className="font-semibold mb-2">SEBI Registered</h4>
+          <h4 className="font-semibold mb-2">NISM Registered</h4>
           <p className="text-sm text-muted-foreground">Research Analyst & Investment Adviser</p>
           <Badge variant="secondary" className="mt-2">Reg: INH000001234</Badge>
         </Card>
@@ -43,11 +43,11 @@ export const ComplianceFooter = () => {
               </p>
               
               <p>
-                <strong>Educational Content Only:</strong> This platform provides educational content and category-level guidance only. We do not recommend specific schemes or securities. For personalized investment advice, please consult a SEBI-registered Investment Adviser.
+                <strong>Educational Content Only:</strong> This platform provides educational content and category-level guidance only. We do not recommend specific schemes or securities. For personalized investment advice, please consult a NISM-registered Investment Adviser.
               </p>
               
               <p>
-                <strong>Regulatory Compliance:</strong> We maintain strict segregation between our Distribution (execution) and Research (education/analysis) functions as per SEBI guidelines. All investment decisions should be made after careful consideration of your financial situation and risk tolerance.
+                <strong>Regulatory Compliance:</strong> We maintain strict segregation between our Distribution (execution) and Research (education/analysis) functions as per NISM guidelines. All investment decisions should be made after careful consideration of your financial situation and risk tolerance.
               </p>
               
               <p>
