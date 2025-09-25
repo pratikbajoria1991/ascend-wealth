@@ -13,6 +13,7 @@ interface ProductCategory {
   features: string[];
   minInvestment: string;
   lockIn: string;
+  taxBenefits: string[];
 }
 
 const productCategories: ProductCategory[] = [
@@ -22,9 +23,10 @@ const productCategories: ProductCategory[] = [
     description: 'Diversified investment solutions managed by professional fund managers',
     icon: <TrendingUp className="h-6 w-6" />,
     riskLevel: 'Moderate',
-    features: ['Professional Management', 'Diversification', 'SIP Options', 'Tax Benefits'],
+    features: ['Professional Management', 'Diversification', 'SIP Options'],
     minInvestment: '₹500',
-    lockIn: 'None (except ELSS)'
+    lockIn: 'None (except ELSS)',
+    taxBenefits: ['ELSS funds: 80C deduction up to ₹1.5L', 'Long-term capital gains tax exempt up to ₹1L', 'SIP tax benefits']
   },
   {
     id: 'equities',
@@ -34,7 +36,8 @@ const productCategories: ProductCategory[] = [
     riskLevel: 'High',
     features: ['Direct Ownership', 'Dividend Income', 'Capital Appreciation', 'Voting Rights'],
     minInvestment: '₹1',
-    lockIn: 'None'
+    lockIn: 'None',
+    taxBenefits: ['LTCG tax exempt up to ₹1L annually', 'Dividend income tax-free up to ₹10L', 'No securities transaction tax on delivery']
   },
   {
     id: 'bonds',
@@ -44,7 +47,8 @@ const productCategories: ProductCategory[] = [
     riskLevel: 'Low',
     features: ['Fixed Returns', 'Capital Protection', 'Regular Income', 'Credit Rating'],
     minInvestment: '₹10,000',
-    lockIn: 'Till Maturity'
+    lockIn: 'Till Maturity',
+    taxBenefits: ['Tax-free bonds available', 'Indexation benefits on capital gains', 'TDS exemption on certain bonds']
   },
   {
     id: 'reits',
@@ -54,7 +58,8 @@ const productCategories: ProductCategory[] = [
     riskLevel: 'Moderate',
     features: ['Real Estate Exposure', 'Regular Dividends', 'Professional Management', 'Liquidity'],
     minInvestment: '₹10,000',
-    lockIn: 'None'
+    lockIn: 'None',
+    taxBenefits: ['Rental income distributed as dividends', 'LTCG tax benefits after 3 years', 'Indexation benefits available']
   },
   {
     id: 'pms',
@@ -64,7 +69,8 @@ const productCategories: ProductCategory[] = [
     riskLevel: 'High',
     features: ['Personalized Strategy', 'Direct Ownership', 'Dedicated Manager', 'Custom Reporting'],
     minInvestment: '₹50 Lakhs',
-    lockIn: 'As per strategy'
+    lockIn: 'As per strategy',
+    taxBenefits: ['Direct equity benefits apply', 'Tax loss harvesting strategies', 'Optimized tax-efficient portfolio allocation']
   },
   {
     id: 'insurance',
@@ -72,9 +78,10 @@ const productCategories: ProductCategory[] = [
     description: 'Life and health insurance solutions for comprehensive financial protection',
     icon: <CreditCard className="h-6 w-6" />,
     riskLevel: 'Low',
-    features: ['Life Protection', 'Tax Benefits', 'Maturity Benefits', 'Rider Options'],
+    features: ['Life Protection', 'Maturity Benefits', 'Rider Options', 'Flexible Premium'],
     minInvestment: '₹500/month',
-    lockIn: 'Policy Term'
+    lockIn: 'Policy Term',
+    taxBenefits: ['80C deduction up to ₹1.5L', '80D health insurance deduction', 'Maturity proceeds tax-free under 10(10D)']
   }
 ];
 
@@ -136,6 +143,18 @@ export const ProductShowcase = () => {
                     <Badge key={index} variant="secondary" className="text-xs">
                       {feature}
                     </Badge>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h4 className="font-medium mb-2 text-sm text-success">Tax Benefits</h4>
+                <div className="space-y-1">
+                  {product.taxBenefits.map((benefit, index) => (
+                    <div key={index} className="text-xs text-muted-foreground flex items-start gap-1">
+                      <span className="text-success mt-0.5">•</span>
+                      <span>{benefit}</span>
+                    </div>
                   ))}
                 </div>
               </div>
