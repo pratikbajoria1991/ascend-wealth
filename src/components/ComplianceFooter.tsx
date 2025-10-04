@@ -11,7 +11,7 @@ export const ComplianceFooter = () => {
         <Card className="premium-card p-4 text-center">
           <Shield className="h-8 w-8 text-primary mx-auto mb-3" />
           <h4 className="font-semibold mb-2">NISM Registered</h4>
-          <p className="text-sm text-muted-foreground">Research Analyst & Investment Adviser</p>
+          <p className="text-sm text-muted-foreground">Research Analyst</p>
           <Badge variant="secondary" className="mt-2">Reg: INH000001234</Badge>
         </Card>
 
