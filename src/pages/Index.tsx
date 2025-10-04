@@ -213,11 +213,11 @@ const Index = () => {
                 <div className="space-y-3">
                   <h3 className="text-xl font-semibold flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    Boost Your Sales
+                    Smart Tax Planning
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Grow revenue with smart, targeted campaigns – from new sales to scaling 
-                    existing ones. Our platform integrates advanced tools to drive sales success.
+                    Optimize your tax liability with strategic planning and investment choices. 
+                    Our experts help you maximize deductions and benefits while ensuring full compliance.
                   </p>
                 </div>
               </div>
