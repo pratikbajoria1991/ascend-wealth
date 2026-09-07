@@ -1,73 +1,77 @@
-# Welcome to your Lovable project
+# Ascend Wealth
 
-## Project info
+> Open-source, privacy-first financial planning workspace for India.
 
-**URL**: https://lovable.dev/projects/d85da0ad-5a6b-4dd6-8c20-6fb23ed50e3b
+Ascend Wealth is a modern React and TypeScript application that helps individuals understand goals, cash flow, risk, and long-term wealth decisions through transparent calculators and explainable planning workflows.
 
-## How can I edit this code?
+## Why this project exists
 
-There are several ways of editing your application.
+Personal-finance software is often opaque, sales-led, or locked behind proprietary platforms. Ascend Wealth provides an auditable foundation that developers, financial professionals, and educators can extend without turning financial guidance into a black box.
 
-**Use Lovable**
+## Core capabilities
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d85da0ad-5a6b-4dd6-8c20-6fb23ed50e3b) and start prompting.
+- Goal-based financial planning and progress tracking
+- Interactive investment and wealth projections
+- Risk-profile and asset-allocation experiences
+- Responsive, accessible UI built with reusable components
+- India-focused financial context and terminology
+- Local-first architecture suitable for privacy-conscious deployments
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technology
 
-**Use your preferred IDE**
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- TanStack Query
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Quick start
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/pratikbajoria1991/ascend-wealth.git
+cd ascend-wealth
+npm ci
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open `http://localhost:8080` (or the URL shown by Vite).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Quality checks
 
-**Use GitHub Codespaces**
+```bash
+npm run lint
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Product principles
 
-## What technologies are used for this project?
+1. **Explainability first** — calculations and assumptions should be visible.
+2. **Privacy by design** — minimise collection of personal financial data.
+3. **Education over persuasion** — help users make informed decisions.
+4. **Accessible by default** — usable across devices and assistive technologies.
+5. **India-aware, globally reusable** — local relevance without hard-coded lock-in.
 
-This project is built with:
+## Roadmap
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- [ ] Document calculation methodologies and assumptions
+- [ ] Add automated unit and accessibility tests
+- [ ] Add scenario comparison and exportable plans
+- [ ] Add localisation and inflation/tax configuration
+- [ ] Add optional self-hosted persistence
+- [ ] Publish a public demo and contribution guide
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/d85da0ad-5a6b-4dd6-8c20-6fb23ed50e3b) and click on Share -> Publish.
+Issues and pull requests are welcome. Please open an issue before a large change so implementation and product assumptions can be aligned. Contributions should include tests where practical and avoid presenting educational projections as personalised regulated advice.
 
-## Can I connect a custom domain to my Lovable project?
+## Responsible-use notice
 
-Yes, you can!
+Ascend Wealth is educational software, not investment, tax, or legal advice. Outputs are illustrative and depend on user-provided assumptions. Users should consult appropriately qualified professionals before acting on financial decisions.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Security
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Do not post personal financial information or credentials in issues. Report security concerns privately through GitHub's security advisory workflow.
+
+## Licence
+
+This project is intended to be released under the MIT Licence. See `LICENSE` once added.
